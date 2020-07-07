@@ -42,7 +42,7 @@ export class Distancias {
 
             const params: any = {
                 address: enderecos[i],
-                key: "AIzaSyDUlpUyScafudenSh6kucKXzaLUY9eJnbs"
+                key: ""
             };
 
             const r = await geocode({ params: params });
@@ -55,7 +55,7 @@ export class Distancias {
         const params: any = {
             origins: [...enderecosGeocoding],
             destinations: [...enderecosGeocoding],
-            key: "AIzaSyDUlpUyScafudenSh6kucKXzaLUY9eJnbs"
+            key: ""
         };
 
         const r = await distancematrix({ params: params });
